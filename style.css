@@ -18,7 +18,7 @@
   
   /*css de la page d'intro*/
   .bg-page {
-    background-image: url(images/fondIntro.png);
+    background-image: url(./images/fondIntro.png);
   
     color: white;
     text-align: center;
@@ -38,7 +38,7 @@
 
 /*css de la page de présentation*/
   .bg-presentation {
-    background-image:url(images/fondBleu.png);  
+    background-image:url(./images/fondBleu.png);  
     color: white;
     font-size: 60px;
     text-align: center;
@@ -69,7 +69,7 @@
 
  /*css de la page de CV*/
 .bg-CV {
-    background-image: url(images/fondOrange.png);
+    background-image: url(./images/fondOrange.png);
     color: white;
     text-align: center;
     font-size: 60px;
@@ -87,7 +87,7 @@
 
  /*css de la page des projets*/
 .bg-projet {
-  background-image: url(images/fondViolet.png);
+  background-image: url(./images/fondViolet.png);
   color: white;
     text-align: center;
     font-size: 60px;
@@ -109,7 +109,7 @@
 
    /*css de la page contact*/
   .bg-contact {
-    background-image: url(images/fondVert.png);
+    background-image: url(./images/fondVert.png);
     color: white;
     text-align: center;
     font-size: 40px;
@@ -272,7 +272,7 @@
   transform:translate(-50%, -50%);
 }
 .bg-index img{
-  width: 70%;
+  width: 100%;
 }
 
 h1 {
