@@ -1,0 +1,289 @@
+@font-face {
+    font-family: bubble;
+    src: url("BubblegumSans-Regular.ttf");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: bubble;
+  }
+  img{
+      width: 100px;
+  }
+  .container {
+    width: 100%;
+    height: 1024px;
+  }
+  
+  /*css de la page d'intro*/
+  .bg-page {
+    background-image: url(./images/fondIntro.png);
+  
+    color: white;
+    text-align: center;
+    font-size: 60px;
+  }
+  
+  .groupe-intro {
+   width: 70%;
+   margin: 0 auto;
+   padding: 15px;
+   display: flex;
+   justify-content: center;
+   justify-content: space-between;
+  }
+ 
+
+
+/*css de la page de présentation*/
+  .bg-presentation {
+    background-image:url(./images/fondBleu.png);  
+    color: white;
+    font-size: 60px;
+    text-align: center;
+  }
+  .groupe-presentation1 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+   }
+   .groupe-presentation2 {
+    width: 70%;
+    margin: 100px;
+    margin-left: 300px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.travail{
+    margin-left: 75px;
+}
+
+
+
+
+ /*css de la page de CV*/
+.bg-CV {
+    background-image: url(./images/fondOrange.png);
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+.groupe-cv{
+  width: 70%;
+   margin: 0 auto;
+   padding: 15px;
+   display: flex;
+   justify-content: center;
+   justify-content: space-between;
+}
+
+
+ /*css de la page des projets*/
+.bg-projet {
+  background-image: url(./images/fondViolet.png);
+  color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+.groupe-projet{
+  width: 70%;
+   margin: 0 auto;
+   padding: 15px;
+   margin-left: 17%;
+   display: flex;
+   justify-content: center;
+   justify-content: space-between;
+}
+.video{
+  margin-top: 20%;
+  margin-left: 2%;
+}
+
+   /*css de la page contact*/
+  .bg-contact {
+    background-image: url(./images/fondVert.png);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .groupe-contact{
+    width: 70%;
+     margin: 0 auto;
+     padding: 15px;
+     display: flex;
+     justify-content: center;
+     justify-content: space-between;
+  }
+  .mail{
+    margin-left: -100px;
+  }
+  
+  .tel{
+    margin-top: 20%;
+    margin-left: -120px;
+  }
+  
+  /*Position bouton retour*/
+  .retour{
+    width: 3000px;
+    height: 66px;
+
+  }
+
+  .groupe-SD{
+    width: 70%;
+     margin: 0 auto;
+     padding: 15px;
+     margin-left: 17%;
+     display: flex;
+     justify-content: center;
+     justify-content: space-between;
+   
+  }
+  .groupe-SD img{
+    width: 100%;
+  }
+  
+  .groupe-parcours img{
+    width:25%;
+  }
+
+  /*Les animations*/
+  @keyframes rotation 
+{
+    0% {
+    transform: rotate(0deg);
+    }
+
+    50% {
+    transform: translateX(100px) rotate(180deg);
+    }
+
+    100% {
+    transform: translateX(0px) rotate(360deg);
+    }
+}
+
+@keyframes scale1 
+{
+    0% {
+    transform: scale(1);
+    }
+
+    50% {
+    transform: scale(1.2);
+    }
+
+    100% {
+    transform: scale(1)
+    }
+}
+
+@keyframes scale2 
+{
+    0% {
+    transform: scale(1);
+    }
+
+    50% {
+    transform: scale(1.5);
+    }
+
+    100% {
+    transform: scale(1.5)
+    }
+}
+
+@keyframes translate 
+{
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+    
+}
+
+.retour:hover {
+  -webkit-animation: rotation 3s;
+  animation: rotation 3s;
+}
+
+.groupe-intro img{
+  -webkit-animation: scale1 6s;
+  animation: scale1 6s;
+  animation-iteration-count: infinite;
+}
+.groupe-intro img:hover{
+  -webkit-animation: translate 1s;
+  animation: translate 1s;
+ 
+}
+.groupe-projet img:hover{
+  -webkit-animation: scale2 3s;
+  animation: scale2 3s;
+
+}
+
+.groupe-cv img:hover{
+  -webkit-animation: scale2 3s;
+  animation: scale2 3s;
+
+}
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+/*CSS de la page index*/
+.bg-index {
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+.bg-index img{
+  width: 70%;
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
