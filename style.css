@@ -262,8 +262,8 @@
   animation-duration:5s;
 }
 
-/*CSS de la page bienvenue*/
-.bg-welcome {
+/*CSS de la page index*/
+.bg-index {
   left:50%;
   padding:10vmin;
   position:fixed;
@@ -271,7 +271,7 @@
   top:50%;
   transform:translate(-50%, -50%);
 }
-.bg-welcome img{
+.bg-index img{
   width: 70%;
 }
 
